@@ -150,9 +150,9 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage, onPageChange }) 
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   const navigation = [
-    { name: 'Dashboard', href: 'dashboard', icon: Home },
-    { name: 'Reports', href: 'reports', icon: BarChart3 },
-    { name: 'Settings', href: 'settings', icon: Settings },
+    { name: 'Pacs Accounts', href: 'dashboard', icon: Home },
+    // { name: 'Reports', href: 'reports', icon: BarChart3 },
+    // { name: 'Settings', href: 'settings', icon: Settings },
   ];
 
   return (
@@ -180,7 +180,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage, onPageChange }) 
         {/* Sidebar Header */}
         <div className="flex items-center justify-between h-16 px-4 border-b border-white/20">
           {!sidebarCollapsed && (
-            <h1 className="text-xl font-bold tracking-wide text-white">DataTable Pro</h1>
+            <h1 className="text-xl font-bold tracking-wide text-white">Pacs DMR</h1>
           )}
           <div className="flex items-center space-x-2">
             <button
@@ -229,7 +229,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage, onPageChange }) 
 
         {/* Footer */}
         <div className="p-3 text-center border-t border-white/10 text-white/60 text-xs">
-          {!sidebarCollapsed && '© 2025 DataTable Pro'}
+          {!sidebarCollapsed && '© 2025 SSB Digital'}
         </div>
       </div>
 
@@ -250,7 +250,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage, onPageChange }) 
           >
             <Menu size={24} />
           </button>
-          <h1 className="text-base font-semibold">DataTable Pro</h1>
+          <h1 className="text-base font-semibold">SSB Digital</h1>
           <div className="w-10" />
         </div>
 
